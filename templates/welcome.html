@@ -33,6 +33,18 @@
         <hr />
         {% endfor %}
     </ul>
+    <h3>Clubs:</h3>
+    <ul>
+        {% for otherClub in clubs%}
+            {%if otherClub['email'] != club['email']%}
+                <li>
+                    {{otherClub['name']}}<br />
+                    Number of Point: {{otherClub['points']}}
+                </li>
+            {%endif%}
+            <hr />
+        {% endfor %}
+    </ul>
     {%endwith%}
 
 </body>
