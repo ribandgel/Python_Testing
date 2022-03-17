@@ -12,5 +12,8 @@
         <input type="email" name="email" id=""/>
         <button type="submit">Enter</button>
     </form>
+    {% for error in errors %}
+        <p style="color: red;"> {{ error }} <p> <br>
+    {% endfor %}
 </body>
 </html>
