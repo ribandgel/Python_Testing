@@ -15,7 +15,10 @@
         {% endfor %}
        </ul>
     {% endif%}
-    Points available: {{club['points']}}
+    Points available: {{club['points']}} <br>
+    {% for error in errors %}
+        <p style="color: red;"> {{error}} </p><br>
+    {% endfor %}
     <h3>Competitions:</h3>
     <ul>
         {% for comp in competitions%}
