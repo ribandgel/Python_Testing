@@ -7,6 +7,7 @@
 <body>
     <h2>{{competition['name']}}</h2>
     Places available: {{competition['numberOfPlaces']}}
+    /!\ You can't book more than 12 places
     <form action="/purchasePlaces" method="post">
         <input type="hidden" name="club" value="{{club['name']}}">
         <input type="hidden" name="competition" value="{{competition['name']}}">
